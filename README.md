@@ -1,3 +1,24 @@
+# Notes
+
+这个项目我是从 branch origin/5.x 开始看的, 这个branch是为了支持koa1.x版本，里边用了大量的GeneratorFunction
+。导致代码逻辑比较难读。但是由于我是先看的这个branch，所以所有的标注都加在了这个branch里边。
+master branch里边的代码相对来看就清晰多了, 由于是koa2.x的语法, 里边没有GeneratorFunction。这里边所有类的方法
+基本上和 branch 5.x 的一致。
+
+这个项目主要的类 & 比较重要的方法: 
+
+    class Layer
+        param()
+
+    class Router
+        routes()
+        register()
+
+这个项目还有一个比较有意思的地方就是应用了 jsdoc2md = require('jsdoc-to-markdown'); 这个库来生成项目api文档。
+值得参考。
+
+
+
 # koa-router
 
 [![NPM version](https://img.shields.io/badge/npm-v7.0.1-blue.svg?style=flat)](https://npmjs.org/package/koa-router) [![NPM Downloads](https://img.shields.io/npm/dm/koa-router.svg?style=flat)](https://npmjs.org/package/koa-router) [![Node.js Version](https://img.shields.io/node/v/koa-router.svg?style=flat)](http://nodejs.org/download/) [![Build Status](http://img.shields.io/travis/alexmingoia/koa-router.svg?style=flat)](http://travis-ci.org/alexmingoia/koa-router) [![Tips](https://img.shields.io/gratipay/alexmingoia.svg?style=flat)](https://www.gratipay.com/alexmingoia/) [![Gitter Chat](https://img.shields.io/badge/gitter-join%20chat-1dce73.svg?style=flat)](https://gitter.im/alexmingoia/koa-router/)
